@@ -20,7 +20,7 @@ left=VariableReference{name='a'},
  type=MUL,
  right=BinaryOp{
 left=VariableReference{name='b'},
- type=MUL,
+ type=MOD,
  right=VariableReference{name='c'}}}}
 }
 IfStatement{
@@ -35,7 +35,7 @@ functionName='foo',
 , elseStatement=IfStatement{
 condition=BinaryOp{
 left=VariableReference{name='a'},
- type=LT,
+ type=LE,
  right=Number{value=0}},
  body=VariableDeclaration{name='b', value=Number{value=100}}
 VariableDeclaration{name='a', value=FunctionCall{

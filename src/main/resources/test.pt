@@ -8,13 +8,13 @@ var b;
 
 func foo2(a, b, c) {
     a = c;
-    return a * (b * c);
+    return a * (b % c);
 }
 
 if (a == 0) {
     b = a;
     a = foo(a, b);
-} elif (a < 0) {
+} elif (a <= 0) {
     b = 100;
     a = foo(a, b);
 } else {
